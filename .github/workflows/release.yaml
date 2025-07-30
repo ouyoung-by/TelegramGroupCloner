@@ -36,15 +36,11 @@ jobs:
         run: |
           pyinstaller -F tg_group_cloner.py -n TelegramGroupCloner
 
-      - name: Rename and make executable (Windows)
-        run: |
-          rename dist\\TelegramGroupCloner.exe TelegramGroupCloner-windows.exe
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: dist/TelegramGroupCloner-windows.exe
+          path: dist/TelegramGroupCloner.exe
           retention-days: 1
 
   release:
@@ -88,7 +84,7 @@ jobs:
             ${{ steps.commit.outputs.MESSAGE }}
 
             ### 支持平台
-            - Windows (TelegramGroupCloner-windows.exe)
+            - Windows (TelegramGroupCloner.exe)
 
             请下载对应系统的可执行文件。
 
