@@ -1,6 +1,8 @@
 # Telegram群组克隆工具 使用说明
 
 ## 项目概述
+最新发布版下载：https://github.com/ouyoung-by/TelegramGroupCloner/releases/latest
+
 1. **账号登录与管理**：
     - 支持通过手机号新增账号
     - 支持加载现有账号 session
