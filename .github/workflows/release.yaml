@@ -34,7 +34,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller -F src/tg_group_cloner.py -n TelegramGroupCloner
+          pyinstaller -F tg_group_cloner.py -n TelegramGroupCloner
 
       - name: Rename and make executable (Windows)
         run: |
