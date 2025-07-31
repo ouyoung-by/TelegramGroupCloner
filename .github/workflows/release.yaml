@@ -34,7 +34,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller -F tg_group_cloner.py -n TelegramGroupCloner
+          pyinstaller -F tg_group_cloner.py -n TelegramGroupCloner -w
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
